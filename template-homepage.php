@@ -42,8 +42,15 @@
                   <?php endif; ?>
 
                   <div class="services-header">
-                      <h1>We Love to Blog!</h1>
-                      <p> Graydient Creative is a full spectrum marketing solutions company for businesses in the hospitality and service industries. We’re more than just pretty websites and social media posts. We were born with creativity, and raised on innovation. </p>
+                  
+                     <?php if( get_field('hero_header') ): ?>
+                      <h1><?php the_field('hero_header'); ?></h1>
+                     <?php endif; ?>
+                     
+                     <?php if( get_field('hero_body') ): ?>
+                        <p> <?php the_field('hero_body'); ?> </p>
+                     <?php endif; ?>
+
                   </div>
            </div>
 

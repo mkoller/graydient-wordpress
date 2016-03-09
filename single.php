@@ -49,7 +49,7 @@
                         <img src="<?php the_field('hero_post_image'); ?>" />
 
                       <?php endif; ?>
-                  
+
                   </div>
                      <div class="title">
                         <h1><?php single_post_title(); ?> </h1>
@@ -66,14 +66,14 @@
             <!-- Start Content -->
             <article class="content">
                <div>
-                  <p>
+                  
                    <?php global $post;
 						$content = $post->post_content;
 
 						if ( !empty( $content ) ) :
 						    echo $content;
 					endif; ?> 
-					</p>
+					
 
                </div>
             </article>
