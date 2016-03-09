@@ -36,18 +36,11 @@
 
         <div class="content row">
                    <div class="hero">
-                   
 
-                      
-                                            <?php if( get_field('hero_image') ): ?>
+                  <?php if( get_field('hero_image') ): ?>
+                     <img src="<?php the_field('hero_image'); ?>" />
+                  <?php endif; ?>
 
-                        <img src="<?php the_field('hero_image'); ?>" />
-
-                      <?php endif; ?>
-
-                      
-                      
- 
                   <div class="services-header">
                       <h1>We Love to Blog!</h1>
                       <p> Graydient Creative is a full spectrum marketing solutions company for businesses in the hospitality and service industries. We’re more than just pretty websites and social media posts. We were born with creativity, and raised on innovation. </p>
@@ -55,6 +48,11 @@
            </div>
 
          <div class="main">
+
+            <div class="columnsContainer">
+
+            <div class="leftColumn">
+
             <?php
                //instantiate a WP_Query and get the latest 10 posts
                $wp_query = new \WP_Query();
@@ -68,8 +66,24 @@
                <h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
                <?php the_content(); ?>
                </div>
-            <?php endwhile; ?>
-         </div>
+               <?php endwhile; ?>
+
+               </div> <!-- left column -->
+
+               <div class="rightColumn">
+
+               <!-- start sidebar -->
+               <?php
+               get_sidebar();
+               ?>
+               <!-- end sidebar -->
+               
+               </div> <!-- reight cloumn -->
+
+            </div> <!-- columns container -->
+
+         </div> <!-- main -->
+
       </div>
          </div>
          <!-- End Wrap -->

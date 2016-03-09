@@ -90,18 +90,6 @@ nav[role=navigation] {
     }
   }
 }
-.hero{
-  width: 100%;
-  height: auto;
-  img{
-    width: 100%;
-  }
-}
-.main{
-  padding: 50px;
-  max-width: 67.5em;
-  margin: 0 auto;
-}
 
 $bar-width: 35px;
 $bar-height: 4px;
@@ -152,6 +140,49 @@ $bar-spacing: 10px;
   bottom: 0;
   transform: rotate(-45deg);
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
+.hero{
+  width: 100%;
+  height: auto;
+  img{
+    width: 100%;
+  }
+}
+.main{
+  padding: 50px;
+  max-width: 80em;
+  margin: 0 auto;
+}
+
+.columnsContainer, footer  { 
+  position: relative; 
+  margin: 0; 
+}
+
+.leftColumn, .rightColumn, footer {  
+   
+  padding: 1.25em; 
+}
+
+.leftColumn { 
+  margin-bottom: .5em; 
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 47.5em ) {
+  .leftColumn { 
+    margin-right: 19.5em;
+   }
+
+  .rightColumn { 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: 18.75em;
+  }   
 }
 
 

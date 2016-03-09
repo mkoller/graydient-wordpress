@@ -722,114 +722,131 @@ object {
 .gallery-caption {
   display: block; }
 
-.home-page .main-header {
-  height: 76px;
-  background: transparent;
-  position: absolute;
-  z-index: 100;
-  width: 100%; }
-.home-page .logo {
-  max-width: 225px;
-  float: left; }
-  .home-page .logo img {
-    max-width: 190px;
+.home-page {
+  /* MEDIA QUERIES */ }
+  .home-page .main-header {
+    height: 76px;
+    background: transparent;
+    position: absolute;
+    z-index: 100;
     width: 100%; }
-.home-page .wrap {
-  position: relative;
-  right: 0;
-  min-height: 100%;
-  overflow-x: hidden;
-  transition: all 0.3s ease-out; }
-  .home-page .wrap.active {
-    right: 16em;
-    overflow-x: visible;
+  .home-page .logo {
+    max-width: 225px;
+    float: left; }
+    .home-page .logo img {
+      max-width: 190px;
+      width: 100%; }
+  .home-page .wrap {
+    position: relative;
+    right: 0;
+    min-height: 100%;
+    overflow-x: hidden;
     transition: all 0.3s ease-out; }
-.home-page a {
-  text-decoration: none;
-  font-family: arial;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased; }
-.home-page .menu-link {
-  float: right;
-  display: block;
-  text-decoration: none;
-  width: 65px;
-  padding: 12px;
-  height: 26px; }
-  .home-page .menu-link:hover {
-    cursor: pointer; }
-.home-page nav[role=navigation] {
-  background: #00a9a6;
-  clear: both;
-  overflow: hidden;
-  width: 16em;
-  height: 50em;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -16em; }
-  .home-page nav[role=navigation] ul {
-    margin: 0;
-    padding: 0; }
-    .home-page nav[role=navigation] ul li a {
-      display: block;
-      padding: 0.8em;
-      color: #fff;
-      border-top: 1px solid #00a9a6; }
-    .home-page nav[role=navigation] ul li:hover ul {
-      max-height: 25em;
-      transition: all 0.8s ease-out; }
-    .home-page nav[role=navigation] ul li ul {
-      max-height: 0px;
-      overflow: hidden;
+    .home-page .wrap.active {
+      right: 16em;
+      overflow-x: visible;
       transition: all 0.3s ease-out; }
-      .home-page nav[role=navigation] ul li ul li a {
-        background: #00a9a6; }
-        .home-page nav[role=navigation] ul li ul li a:hover {
-          background: #007674; }
-.home-page .hero {
-  width: 100%;
-  height: auto; }
-  .home-page .hero img {
-    width: 100%; }
-.home-page .main {
-  padding: 50px;
-  max-width: 67.5em;
-  margin: 0 auto; }
-.home-page .bar,
-.home-page .bar:after,
-.home-page .bar:before {
-  width: 35px;
-  height: 4px; }
-.home-page .bar {
-  position: relative;
-  transform: translateY(10px);
-  transition: all 0ms 300ms;
-  background: #fff; }
-  .home-page .bar.animate {
-    background: rgba(255, 255, 255, 0); }
-.home-page .bar:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  background: white;
-  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
-.home-page .bar:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 10px;
-  background: white;
-  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
-.home-page .bar.animate:after {
-  top: 0;
-  transform: rotate(45deg);
-  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
-.home-page .bar.animate:before {
-  bottom: 0;
-  transform: rotate(-45deg);
-  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .home-page a {
+    text-decoration: none;
+    font-family: arial;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased; }
+  .home-page .menu-link {
+    float: right;
+    display: block;
+    text-decoration: none;
+    width: 65px;
+    padding: 12px;
+    height: 26px; }
+    .home-page .menu-link:hover {
+      cursor: pointer; }
+  .home-page nav[role=navigation] {
+    background: #00a9a6;
+    clear: both;
+    overflow: hidden;
+    width: 16em;
+    height: 50em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -16em; }
+    .home-page nav[role=navigation] ul {
+      margin: 0;
+      padding: 0; }
+      .home-page nav[role=navigation] ul li a {
+        display: block;
+        padding: 0.8em;
+        color: #fff;
+        border-top: 1px solid #00a9a6; }
+      .home-page nav[role=navigation] ul li:hover ul {
+        max-height: 25em;
+        transition: all 0.8s ease-out; }
+      .home-page nav[role=navigation] ul li ul {
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 0.3s ease-out; }
+        .home-page nav[role=navigation] ul li ul li a {
+          background: #00a9a6; }
+          .home-page nav[role=navigation] ul li ul li a:hover {
+            background: #007674; }
+  .home-page .bar,
+  .home-page .bar:after,
+  .home-page .bar:before {
+    width: 35px;
+    height: 4px; }
+  .home-page .bar {
+    position: relative;
+    transform: translateY(10px);
+    transition: all 0ms 300ms;
+    background: #fff; }
+    .home-page .bar.animate {
+      background: rgba(255, 255, 255, 0); }
+  .home-page .bar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background: white;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .home-page .bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background: white;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .home-page .bar.animate:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .home-page .bar.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .home-page .hero {
+    width: 100%;
+    height: auto; }
+    .home-page .hero img {
+      width: 100%; }
+  .home-page .main {
+    padding: 50px;
+    max-width: 80em;
+    margin: 0 auto; }
+  .home-page .columnsContainer, .home-page footer {
+    position: relative;
+    margin: 0; }
+  .home-page .leftColumn, .home-page .rightColumn, .home-page footer {
+    padding: 1.25em; }
+  .home-page .leftColumn {
+    margin-bottom: .5em; }
+  @media screen and (min-width: 47.5em) {
+    .home-page .leftColumn {
+      margin-right: 19.5em; }
+    .home-page .rightColumn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 18.75em; } }
 
 .posts-container .main-header {
   height: 76px;
