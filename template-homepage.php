@@ -9,7 +9,7 @@
       <meta charset="UTF-8">
       <title>Navigation 1</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/graydient/style.css?ver=1457483764">
+ <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/graydient/css/style.css">
    </head>
    <body>
 <div class="home-page">
@@ -34,11 +34,37 @@
             </header>
             <!-- Stop Navigation -->
 
-          <div class="hero">
-            <img src="http://placehold.it/1280x400" alt="">
-         </div>
+        <div class="content row">
+                   <div class="hero">
+                   
+
+                      
+                        <img src="http://blog.graydientcreative.com/wp-content/uploads/2016/02/blog-header.png" />
+
+                      
+                      
+ 
+                  <div class="services-header">
+                      <h1>We Love to Blog!</h1>
+                      <p> Graydient Creative is a full spectrum marketing solutions company for businesses in the hospitality and service industries. We’re more than just pretty websites and social media posts. We were born with creativity, and raised on innovation. </p>
+                  </div>
+           </div>
+
          <div class="main">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis dignissim orci viverra venenatis. Nulla sit amet quam at nisl sagittis adipiscing in a ligula. Nam in nisi neque. Ut in ipsum eget justo dignissim accumsan a sit amet neque. Nulla facilisi. Aliquam erat volutpat. Aliquam aliquet bibendum mollis. Aliquam erat volutpat. Sed commodo elit ac neque eleifend in commodo justo elementum. Curabitur tristique, odio id convallis aliquet, nibh augue sollicitudin lacus, at fermentum sem dolor eu lacus. Proin gravida dui in libero aliquet quis egestas odio dictum. Fusce in ligula vitae ante mollis viverra. Curabitur nibh felis, ornare ut tempor sed, lobortis id elit. Phasellus nec semper lorem. Pellentesque erat augue, tincidunt sed vulputate et, congue nec felis. Sed ligula metus, condimentum non commodo et, varius varius nisi.</p>
+            <?php
+               //instantiate a WP_Query and get the latest 10 posts
+               $wp_query = new \WP_Query();
+               $wp_query->query('showposts=10');
+                
+               //Iterate through the returned posts. The starts the WP "Loop"
+               while ($wp_query->have_posts()) :
+                  $wp_query->the_post();
+               ?>
+               <div class="post">
+               <h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+               <?php the_content(); ?>
+               </div>
+            <?php endwhile; ?>
          </div>
       </div>
          </div>

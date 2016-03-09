@@ -99,6 +99,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 ## Galleries
 --------------------------------------------------------------*/
 /* demo */
+/* Header */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -623,7 +624,10 @@ embed, iframe, object {
 }
 .home-page .main-header {
   height: 76px;
-  background: #000;
+  background: rgba(0, 0, 0, .0);
+  position: absolute;
+  z-index: 100;
+  width: 100%;
 }
 .home-page .logo {
   max-width: 225px;
@@ -667,6 +671,7 @@ embed, iframe, object {
   clear: both;
   overflow: hidden;
   width: 16em;
+  height: 50em;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1195,4 +1200,87 @@ embed, iframe, object {
   .posts-container button.trigger::before {
     display: none;
   }
+}
+.services-header {
+  width: 100%;
+  position: absolute;
+  margin-top: -25%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  text-align: center;
+}
+@media only screen and (max-width:47em) {
+  .services-header {
+    display: none;
+  }
+}
+.services-header h1, .services-header p {
+  color: #fff;
+}
+.services-header p {
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.services-header-container {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.services-section {
+  background: url(/Img/graydient-web-bkg.svg);
+  background-size: auto 100%;
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+.services-section .service {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+.services-section .service .icon-left {
+  text-align: center;
+  padding: 25px 10px;
+}
+.services-section .service .icon-left img {
+  max-width: 30%;
+  min-width: 60px;
+}
+.services-section .service .info-right {
+  background: #fff;
+  padding: 15px 25px;
+}
+.services-section .service .info-right .service-info {
+  max-width: 700px;
+}
+.white {
+  color: #fff;
+}
+.center {
+  text-align: center;
+}
+.color-1 {
+  color: #00a9a6;
+}
+.color-2 {
+  color: #b7d26b;
+}
+.color-3 {
+  color: #e8842c;
+}
+.color-4 {
+  color: #666;
+}
+a {
+  color: #00a9a6;
+}
+.full {
+  width: 100%;
+  min-height: 100px;
+}
+.full .container {
+  max-width: 1020px;
+  margin: 0 auto;
 }
