@@ -2,7 +2,7 @@
 
 .main-header {
   height: 76px;
-  background: rgba(0,0,0,.0);
+  background: rgba(0,0,0,.5);
   position: absolute;
   z-index: 100;
   width: 100%;
@@ -55,6 +55,9 @@ nav[role=navigation] {
   top: 0;
   bottom: 0;
   right: -16em;
+  @media #{$mq-mobileOnly}{
+    height: 75vh;
+  }
   ul {
     margin: 0;
     padding: 0;

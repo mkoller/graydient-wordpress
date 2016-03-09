@@ -15,6 +15,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
        <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/graydient/css/style.css">
 
+
    </head>
    <body>
       <div class="posts-container">
@@ -41,15 +42,25 @@
 
             <!-- Start Header -->
             <div class="header ">
-                  <div class="bg-img"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2016/03/dog.jpg" alt="Background Image" /></div>
+                  <div class="bg-img">
+
+                  <?php if( get_field('hero_post_image') ): ?>
+
+                        <img src="<?php the_field('hero_post_image'); ?>" />
+
+                      <?php endif; ?>
+                  
+                  </div>
                      <div class="title">
                         <h1><?php single_post_title(); ?> </h1>
-                        <p class="subline">Inspiration for Article Intro Effects</p>
-                        <p>by <strong>Mark Satorini</strong> &#8212; Posted in <strong>Animals</strong> on <strong>May 21, 2014</strong></p>
+                        <p>by 
+                        <strong>
+                        Author
+                        </strong> 
                      </div>
                </div>
             </div>
-            <button class="trigger" data-info="Click to see the header effect"><span>Trigger</span></button>
+            <button class="trigger"><span></span></button>
             <!-- End Header -->
 
             <!-- Start Content -->

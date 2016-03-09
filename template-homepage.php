@@ -39,7 +39,11 @@
                    
 
                       
-                        <img src="http://blog.graydientcreative.com/wp-content/uploads/2016/02/blog-header.png" />
+                                            <?php if( get_field('hero_image') ): ?>
+
+                        <img src="<?php the_field('hero_image'); ?>" />
+
+                      <?php endif; ?>
 
                       
                       
@@ -54,7 +58,7 @@
             <?php
                //instantiate a WP_Query and get the latest 10 posts
                $wp_query = new \WP_Query();
-               $wp_query->query('showposts=10');
+               $wp_query->query('showposts=4');
                 
                //Iterate through the returned posts. The starts the WP "Loop"
                while ($wp_query->have_posts()) :
