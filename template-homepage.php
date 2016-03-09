@@ -9,65 +9,38 @@
       <meta charset="UTF-8">
       <title>Navigation 1</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/graydient/style.css">
-
+ <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/graydient/style.css?ver=1457483764">
    </head>
    <body>
-      <div class="posts-container">
-      <!-- Start container -->
-      <div id="container" class="container intro-effect-fadeout">
+<div class="home-page">
+   <!-- Start container -->
+      <div id="container" class="container">
       <!-- Start Wrap -->
          <div class="wrap" id="wrap">
 
          <!-- Start Navigation -->
             <header class="main-header">
+            <div class="logo"><a href="/"><img src="http://localhost:8888/graydient/wp-content/uploads/2016/03/graydient-logo.png"></a></div>
                <div class="menu-link">
                   <div class="bar"></div>
                </div>
                <nav id="menu" role="navigation">
                   <ul>
-                     <li><a href="#">Home</a>
-                     </li>
-                     <li>
-                        <a href="#">About</a>
-                        <ul>
-                           <li>
-                              <a href="#">About 2</a>
-                           </li>
-                           <li>
-                              <a href="#">About 3</a>
-                           </li>
-                        </ul>
-                     </li>
-                     <li><a href="#">Blog</a></li>
-                     <li><a href="#">Services</a></li>
-                     <li><a href="#">Contact</a></li>
+                  <div class="access">
+                          <?php wp_nav_menu(); ?>
+                     </div>
                   </ul>
                </nav>
             </header>
             <!-- Stop Navigation -->
 
-            <!-- Start Header -->
-            <div class="header">
-                  <div class="bg-img"><img src="http://127.0.0.1:8080/img/2.jpg" alt="Background Image" /></div>
-                     <div class="title">
-                        <h1>Unconditional Love &amp; Cookies</h1>
-                        <p class="subline">Inspiration for Article Intro Effects</p>
-                        <p>by <strong>Mark Satorini</strong> &#8212; Posted in <strong>Animals</strong> on <strong>May 21, 2014</strong></p>
-                     </div>
-               </div>
-            </div>
-            <button class="trigger" data-info="Click to see the header effect"><span>Trigger</span></button>
-            <!-- End Header -->
-
-            <!-- Start Content -->
-            <article class="content">
-               <div>
-                  <p>We may define a food to be any substance which will repair the functional waste of the body, increase its growth, or maintain the heat, muscular, and nervous energy. </p>
-
-               </div>
-            </article>
-            <!-- End Content -->
+          <div class="hero">
+            <img src="http://placehold.it/1280x400" alt="">
+         </div>
+         <div class="main">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis dignissim orci viverra venenatis. Nulla sit amet quam at nisl sagittis adipiscing in a ligula. Nam in nisi neque. Ut in ipsum eget justo dignissim accumsan a sit amet neque. Nulla facilisi. Aliquam erat volutpat. Aliquam aliquet bibendum mollis. Aliquam erat volutpat. Sed commodo elit ac neque eleifend in commodo justo elementum. Curabitur tristique, odio id convallis aliquet, nibh augue sollicitudin lacus, at fermentum sem dolor eu lacus. Proin gravida dui in libero aliquet quis egestas odio dictum. Fusce in ligula vitae ante mollis viverra. Curabitur nibh felis, ornare ut tempor sed, lobortis id elit. Phasellus nec semper lorem. Pellentesque erat augue, tincidunt sed vulputate et, congue nec felis. Sed ligula metus, condimentum non commodo et, varius varius nisi.</p>
+         </div>
+      </div>
          </div>
          <!-- End Wrap -->
       </div>
@@ -76,8 +49,7 @@
       <!-- posts container -->
 
       <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-      <script src="http://127.0.0.1:8080/js/scripts.js"></script>
-      <script src="http://127.0.0.1:8080/js/classie.js"></script>
-      <script src="http://127.0.0.1:8080/js/posts.js"></script>
+      <script src="<?php echo get_site_url(); ?>/wp-content/themes/graydient/js/scripts.js"></script>
+
    </body>
 </html>

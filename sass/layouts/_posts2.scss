@@ -29,6 +29,8 @@ a:hover, a:focus {
 		url('../fonts/icomoon/icomoon.svg?-ee0u0f#icomoon') format('svg');
 }
 */
+
+
 html, body, .container, .header {
 	height: 100%;
 }
@@ -59,6 +61,8 @@ html, body, .container, .header {
 	display: block;
 	min-width: 100%;
 	min-height: 100%;
+	width: 100%;
+	height: auto;
 }
 
 .title {

@@ -13,7 +13,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/graydient/style.css">
+      <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/graydient/style.css?ver=1457481851">
 
    </head>
    <body>
@@ -25,37 +25,25 @@
 
          <!-- Start Navigation -->
             <header class="main-header">
+            <div class="logo"><a href="/"><img src="http://localhost:8888/graydient/wp-content/uploads/2016/03/graydient-logo.png"></a></div>
                <div class="menu-link">
                   <div class="bar"></div>
                </div>
                <nav id="menu" role="navigation">
                   <ul>
-                     <li><a href="#">Home</a>
-                     </li>
-                     <li>
-                        <a href="#">About</a>
-                        <ul>
-                           <li>
-                              <a href="#">About 2</a>
-                           </li>
-                           <li>
-                              <a href="#">About 3</a>
-                           </li>
-                        </ul>
-                     </li>
-                     <li><a href="#">Blog</a></li>
-                     <li><a href="#">Services</a></li>
-                     <li><a href="#">Contact</a></li>
+       				<div class="access">
+                          <?php wp_nav_menu(); ?>
+                     </div>
                   </ul>
                </nav>
             </header>
             <!-- Stop Navigation -->
 
             <!-- Start Header -->
-            <div class="header">
+            <div class="header ">
                   <div class="bg-img"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2016/03/dog.jpg" alt="Background Image" /></div>
                      <div class="title">
-                        <h1>Unconditional Love &amp; Cookies</h1>
+                        <h1><?php single_post_title(); ?> </h1>
                         <p class="subline">Inspiration for Article Intro Effects</p>
                         <p>by <strong>Mark Satorini</strong> &#8212; Posted in <strong>Animals</strong> on <strong>May 21, 2014</strong></p>
                      </div>
