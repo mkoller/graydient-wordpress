@@ -9,7 +9,7 @@
       <meta charset="UTF-8">
       <title>Navigation 1</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/graydient/css/style.css">
+ <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/graydient/style.css">
    </head>
    <body>
 <div class="home-page">

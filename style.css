@@ -1,8 +1,8 @@
 /*!
 Theme Name: graydient
-Theme URI: http://underscores.me/
+Theme URI: graydientcreative.com
 Author: Graydient Creative
-Author URI: http://underscores.me/
+Author URI: graydientcreative.com
 Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -45,224 +45,304 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-/* Text meant only for screen readers. */
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Posts and pages
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Asides
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Comments
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-/*--------------------------------------------------------------
-## Galleries
---------------------------------------------------------------*/
-/* demo */
-/* Header */
+/* line 1, sass/_normalize.scss */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
+
+/* line 7, sass/_normalize.scss */
 body {
   margin: 0;
 }
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+
+/* line 11, sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
   display: block;
 }
-audio, canvas, progress, video {
+
+/* line 26, sass/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
   display: inline-block;
   vertical-align: baseline;
 }
+
+/* line 34, sass/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
-[hidden], template {
+
+/* line 39, sass/_normalize.scss */
+[hidden],
+template {
   display: none;
 }
+
+/* line 44, sass/_normalize.scss */
 a {
   background-color: transparent;
 }
-a:active, a:hover {
+
+/* line 48, sass/_normalize.scss */
+a:active,
+a:hover {
   outline: 0;
 }
+
+/* line 53, sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
-b, strong {
+
+/* line 57, sass/_normalize.scss */
+b,
+strong {
   font-weight: bold;
 }
+
+/* line 62, sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
+
+/* line 66, sass/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
+
+/* line 71, sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
+
+/* line 76, sass/_normalize.scss */
 small {
   font-size: 80%;
 }
-sub, sup {
+
+/* line 80, sass/_normalize.scss */
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
+
+/* line 88, sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
+
+/* line 92, sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
+
+/* line 96, sass/_normalize.scss */
 img {
   border: 0;
 }
+
+/* line 100, sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
+
+/* line 104, sass/_normalize.scss */
 figure {
   margin: 1em 40px;
 }
+
+/* line 108, sass/_normalize.scss */
 hr {
   box-sizing: content-box;
   height: 0;
 }
+
+/* line 113, sass/_normalize.scss */
 pre {
   overflow: auto;
 }
-code, kbd, pre, samp {
+
+/* line 117, sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-button, input, optgroup, select, textarea {
+
+/* line 125, sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
   color: inherit;
   font: inherit;
   margin: 0;
 }
+
+/* line 135, sass/_normalize.scss */
 button {
   overflow: visible;
 }
-button, select {
+
+/* line 139, sass/_normalize.scss */
+button,
+select {
   text-transform: none;
 }
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+
+/* line 144, sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
-button[disabled], html input[disabled] {
+
+/* line 152, sass/_normalize.scss */
+button[disabled],
+html input[disabled] {
   cursor: default;
 }
-button::-moz-focus-inner, input::-moz-focus-inner {
+
+/* line 157, sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+
+/* line 163, sass/_normalize.scss */
 input {
   line-height: normal;
 }
-input[type="checkbox"], input[type="radio"] {
+
+/* line 167, sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+
+/* line 173, sass/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
+
+/* line 178, sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   box-sizing: content-box;
 }
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+
+/* line 183, sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
+/* line 188, sass/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
+
+/* line 194, sass/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
 }
+
+/* line 199, sass/_normalize.scss */
 textarea {
   overflow: auto;
 }
+
+/* line 203, sass/_normalize.scss */
 optgroup {
   font-weight: bold;
 }
+
+/* line 207, sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-td, th {
+
+/* line 212, sass/_normalize.scss */
+td,
+th {
   padding: 0;
 }
-body, button, input, select, textarea {
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+/* line 1, sass/typography/_typography.scss */
+body,
+button,
+input,
+select,
+textarea {
   color: #404040;
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
 }
+
+/* line 1, sass/typography/_headings.scss */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
+
+/* line 1, sass/typography/_copy.scss */
 p {
   margin-bottom: 1.5em;
 }
+
+/* line 5, sass/typography/_copy.scss */
 dfn, cite, em, i {
   font-style: italic;
 }
+
+/* line 9, sass/typography/_copy.scss */
 blockquote {
   margin: 0 1.5em;
 }
+
+/* line 13, sass/typography/_copy.scss */
 address {
   margin: 0 0 1.5em;
 }
+
+/* line 17, sass/typography/_copy.scss */
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -274,140 +354,272 @@ pre {
   overflow: auto;
   padding: 1.6em;
 }
+
+/* line 28, sass/typography/_copy.scss */
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem;
 }
+
+/* line 33, sass/typography/_copy.scss */
 abbr, acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
+
+/* line 38, sass/typography/_copy.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
+
+/* line 43, sass/typography/_copy.scss */
 big {
   font-size: 125%;
 }
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+/* line 1, sass/elements/_elements.scss */
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+/* line 5, sass/elements/_elements.scss */
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit;
 }
+
+/* line 11, sass/elements/_elements.scss */
 body {
-  /* Fallback for when there is no custom background color defined. */
   background: #fff;
+  /* Fallback for when there is no custom background color defined. */
 }
+
+/* line 15, sass/elements/_elements.scss */
 blockquote, q {
   quotes: "" "";
 }
-blockquote:before, q:before, blockquote:after, q:after {
+/* line 18, sass/elements/_elements.scss */
+blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
+
+/* line 24, sass/elements/_elements.scss */
 hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
 }
+
+/* line 1, sass/elements/_lists.scss */
 ul, ol {
   margin: 0 0 1.5em 3em;
 }
+
+/* line 5, sass/elements/_lists.scss */
 ul {
   list-style: disc;
 }
+
+/* line 9, sass/elements/_lists.scss */
 ol {
   list-style: decimal;
 }
-li > ul, li > ol {
+
+/* line 13, sass/elements/_lists.scss */
+li > ul,
+li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
+
+/* line 19, sass/elements/_lists.scss */
 dt {
   font-weight: bold;
 }
+
+/* line 23, sass/elements/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
+
+/* line 33, sass/elements/_elements.scss */
 img {
-  /* Make sure images are scaled correctly. */
   height: auto;
-  /* Adhere to container width. */
+  /* Make sure images are scaled correctly. */
   max-width: 100%;
+  /* Adhere to container width. */
 }
+
+/* line 1, sass/elements/_tables.scss */
 table {
   margin: 0 0 1.5em;
   width: 100%;
 }
-button, input[type="button"], input[type="reset"], input[type="submit"] {
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/* line 1, sass/forms/_buttons.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #e6e6e6;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, .8);
+  color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: 0.6em 1em 0.4em;
+  padding: .6em 1em .4em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
-button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+/* line 16, sass/forms/_buttons.scss */
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
   border-color: #ccc #bbb #aaa;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
-button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active, button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus {
+/* line 21, sass/forms/_buttons.scss */
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
   border-color: #aaa #bbb #bbb;
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+
+/* line 1, sass/forms/_fields.scss */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus {
+/* line 21, sass/forms/_fields.scss */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
   color: #111;
 }
+
+/* line 26, sass/forms/_fields.scss */
 select {
   border: 1px solid #ccc;
 }
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"] {
+
+/* line 30, sass/forms/_fields.scss */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"] {
   padding: 3px;
 }
+
+/* line 48, sass/forms/_fields.scss */
 textarea {
   padding-left: 3px;
   width: 100%;
 }
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+/* line 1, sass/navigation/_links.scss */
 a {
   color: royalblue;
 }
+/* line 4, sass/navigation/_links.scss */
 a:visited {
   color: purple;
 }
+/* line 7, sass/navigation/_links.scss */
 a:hover, a:focus, a:active {
   color: midnightblue;
 }
+/* line 12, sass/navigation/_links.scss */
 a:focus {
   outline: thin dotted;
 }
+/* line 15, sass/navigation/_links.scss */
 a:hover, a:active {
   outline: 0;
 }
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+/* line 1, sass/navigation/_menus.scss */
 .main-navigation {
   clear: both;
   display: block;
   float: left;
   width: 100%;
-  /* Small menu. */
 }
+/* line 7, sass/navigation/_menus.scss */
 .main-navigation ul {
   display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
+/* line 13, sass/navigation/_menus.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -416,59 +628,89 @@ a:hover, a:active {
   left: -999em;
   z-index: 99999;
 }
+/* line 21, sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
+/* line 27, sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
+/* line 33, sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
-.main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul {
+/* line 46, sass/navigation/_menus.scss */
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
   left: auto;
 }
+/* line 52, sass/navigation/_menus.scss */
 .main-navigation li {
   float: left;
   position: relative;
 }
+/* line 61, sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
-.menu-toggle, .main-navigation.toggled ul {
+
+/* Small menu. */
+/* line 74, sass/navigation/_menus.scss */
+.menu-toggle,
+.main-navigation.toggled ul {
   display: block;
 }
+
 @media screen and (min-width: 37.5em) {
+  /* line 80, sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
+
+  /* line 83, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
-.site-main .comment-navigation, .site-main .posts-navigation, .site-main .post-navigation {
+/* line 92, sass/navigation/_menus.scss */
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-.comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
+/* line 97, sass/navigation/_menus.scss */
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
+/* line 102, sass/navigation/_menus.scss */
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
   float: right;
   text-align: right;
   width: 50%;
 }
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+/* line 2, sass/modules/_accessibility.scss */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
   height: 1px;
   width: 1px;
   overflow: hidden;
-  /* Do not show the outline on the skip link target. */
 }
+/* line 9, sass/modules/_accessibility.scss */
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
@@ -486,157 +728,286 @@ a:hover, a:active {
   text-decoration: none;
   top: 5px;
   width: auto;
-  /* Above WP toolbar. */
   z-index: 100000;
+  /* Above WP toolbar. */
 }
+
+/* Do not show the outline on the skip link target. */
+/* line 30, sass/modules/_accessibility.scss */
 #content[tabindex="-1"]:focus {
   outline: 0;
 }
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+/* line 1, sass/modules/_alignments.scss */
 .alignleft {
   display: inline;
   float: left;
   margin-right: 1.5em;
 }
+
+/* line 7, sass/modules/_alignments.scss */
 .alignright {
   display: inline;
   float: right;
   margin-left: 1.5em;
 }
+
+/* line 13, sass/modules/_alignments.scss */
 .aligncenter {
   clear: both;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after {
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+/* line 1, sass/modules/_clearings.scss */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
   content: "";
   display: table;
   table-layout: fixed;
 }
-.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after {
+
+/* line 16, sass/modules/_clearings.scss */
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
   clear: both;
 }
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+/* line 1, sass/site/secondary/_widgets.scss */
 .widget {
-  /* Make sure select elements fit in widgets. */
   margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */
 }
+/* line 5, sass/site/secondary/_widgets.scss */
 .widget select {
   max-width: 100%;
 }
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+/* line 1, sass/site/primary/_posts-and-pages.scss */
 .sticky {
   display: block;
 }
+
+/* line 5, sass/site/primary/_posts-and-pages.scss */
 .hentry {
   margin: 0 0 1.5em;
 }
-.byline, .updated:not(.published) {
+
+/* line 9, sass/site/primary/_posts-and-pages.scss */
+.byline,
+.updated:not(.published) {
   display: none;
 }
-.single .byline, .group-blog .byline {
+
+/* line 14, sass/site/primary/_posts-and-pages.scss */
+.single .byline,
+.group-blog .byline {
   display: inline;
 }
-.page-content, .entry-content, .entry-summary {
+
+/* line 19, sass/site/primary/_posts-and-pages.scss */
+.page-content,
+.entry-content,
+.entry-summary {
   margin: 1.5em 0 0;
 }
+
+/* line 25, sass/site/primary/_posts-and-pages.scss */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
 }
-.blog .format-aside .entry-title, .archive .format-aside .entry-title {
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+/* line 1, sass/site/primary/_asides.scss */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
   display: none;
 }
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+/* line 1, sass/site/primary/_comments.scss */
 .comment-content a {
   word-wrap: break-word;
 }
+
+/* line 4, sass/site/primary/_comments.scss */
 .bypostauthor {
   display: block;
 }
-.infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer {
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+/* line 2, sass/modules/_infinite-scroll.scss */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
   display: none;
-  /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
 }
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+/* line 8, sass/modules/_infinite-scroll.scss */
 .infinity-end.neverending .site-footer {
   display: block;
 }
-.page-content .wp-smiley, .entry-content .wp-smiley, .comment-content .wp-smiley {
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+/* line 1, sass/media/_media.scss */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
   border: none;
   margin-bottom: 0;
   margin-top: 0;
   padding: 0;
-  /* Make sure embeds and iframes fit their containers. */
 }
-embed, iframe, object {
+
+/* Make sure embeds and iframes fit their containers. */
+/* line 11, sass/media/_media.scss */
+embed,
+iframe,
+object {
   max-width: 100%;
-  /*--------------------------------------------------------------
+}
+
+/*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
-}
+/* line 1, sass/media/_captions.scss */
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%;
 }
+/* line 5, sass/media/_captions.scss */
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+/* line 9, sass/media/_captions.scss */
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
+
+/* line 14, sass/media/_captions.scss */
 .wp-caption-text {
   text-align: center;
 }
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+/* line 1, sass/media/_galleries.scss */
 .gallery {
   margin-bottom: 1.5em;
 }
+
+/* line 5, sass/media/_galleries.scss */
 .gallery-item {
   display: inline-block;
   text-align: center;
   vertical-align: top;
   width: 100%;
 }
+/* line 11, sass/media/_galleries.scss */
 .gallery-columns-2 .gallery-item {
   max-width: 50%;
 }
+/* line 15, sass/media/_galleries.scss */
 .gallery-columns-3 .gallery-item {
   max-width: 33.33%;
 }
+/* line 19, sass/media/_galleries.scss */
 .gallery-columns-4 .gallery-item {
   max-width: 25%;
 }
+/* line 23, sass/media/_galleries.scss */
 .gallery-columns-5 .gallery-item {
   max-width: 20%;
 }
+/* line 27, sass/media/_galleries.scss */
 .gallery-columns-6 .gallery-item {
   max-width: 16.66%;
 }
+/* line 31, sass/media/_galleries.scss */
 .gallery-columns-7 .gallery-item {
   max-width: 14.28%;
 }
+/* line 35, sass/media/_galleries.scss */
 .gallery-columns-8 .gallery-item {
   max-width: 12.5%;
 }
+/* line 39, sass/media/_galleries.scss */
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%;
 }
+
+/* line 44, sass/media/_galleries.scss */
 .gallery-caption {
   display: block;
 }
+
+/* line 1, sass/layouts/_header.scss */
+.home-page {
+  /* MEDIA QUERIES */
+}
+/* line 5, sass/layouts/_header.scss */
 .home-page .main-header {
   height: 76px;
-  background: rgba(0, 0, 0, .0);
+  background: transparent;
   position: absolute;
   z-index: 100;
   width: 100%;
 }
+/* line 12, sass/layouts/_header.scss */
 .home-page .logo {
   max-width: 225px;
   float: left;
 }
+/* line 15, sass/layouts/_header.scss */
 .home-page .logo img {
   max-width: 190px;
   width: 100%;
 }
+/* line 20, sass/layouts/_header.scss */
 .home-page .wrap {
   position: relative;
   right: 0;
@@ -644,17 +1015,20 @@ embed, iframe, object {
   overflow-x: hidden;
   transition: all 0.3s ease-out;
 }
+/* line 26, sass/layouts/_header.scss */
 .home-page .wrap.active {
   right: 16em;
   overflow-x: visible;
   transition: all 0.3s ease-out;
 }
+/* line 32, sass/layouts/_header.scss */
 .home-page a {
   text-decoration: none;
   font-family: arial;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
+/* line 38, sass/layouts/_header.scss */
 .home-page .menu-link {
   float: right;
   display: block;
@@ -663,11 +1037,13 @@ embed, iframe, object {
   padding: 12px;
   height: 26px;
 }
+/* line 45, sass/layouts/_header.scss */
 .home-page .menu-link:hover {
   cursor: pointer;
 }
+/* line 50, sass/layouts/_header.scss */
 .home-page nav[role=navigation] {
-  background: #999;
+  background: #00a9a6;
   clear: both;
   overflow: hidden;
   width: 16em;
@@ -677,94 +1053,146 @@ embed, iframe, object {
   bottom: 0;
   right: -16em;
 }
+/* line 60, sass/layouts/_header.scss */
 .home-page nav[role=navigation] ul {
   margin: 0;
   padding: 0;
 }
+/* line 64, sass/layouts/_header.scss */
 .home-page nav[role=navigation] ul li a {
   display: block;
   padding: 0.8em;
   color: #fff;
-  border-top: 1px solid #808080;
+  border-top: 1px solid #00a9a6;
 }
+/* line 72, sass/layouts/_header.scss */
 .home-page nav[role=navigation] ul li:hover ul {
   max-height: 25em;
   transition: all 0.8s ease-out;
 }
+/* line 77, sass/layouts/_header.scss */
 .home-page nav[role=navigation] ul li ul {
   max-height: 0px;
   overflow: hidden;
   transition: all 0.3s ease-out;
 }
+/* line 82, sass/layouts/_header.scss */
 .home-page nav[role=navigation] ul li ul li a {
-  background: #808080;
+  background: #00a9a6;
 }
+/* line 84, sass/layouts/_header.scss */
 .home-page nav[role=navigation] ul li ul li a:hover {
-  background: #676767;
+  background: #007674;
 }
-.home-page .hero {
-  width: 100%;
-  height: auto;
-}
-.home-page .hero img {
-  width: 100%;
-}
-.home-page .main {
-  padding: 50px;
-  max-width: 67.5em;
-  margin: 0 auto;
-}
-.home-page .bar, .home-page .bar:after, .home-page .bar:before {
+/* line 98, sass/layouts/_header.scss */
+.home-page .bar,
+.home-page .bar:after,
+.home-page .bar:before {
   width: 35px;
   height: 4px;
 }
+/* line 105, sass/layouts/_header.scss */
 .home-page .bar {
   position: relative;
   transform: translateY(10px);
   transition: all 0ms 300ms;
   background: #fff;
 }
+/* line 110, sass/layouts/_header.scss */
 .home-page .bar.animate {
   background: rgba(255, 255, 255, 0);
 }
+/* line 115, sass/layouts/_header.scss */
 .home-page .bar:before {
   content: "";
   position: absolute;
   left: 0;
   bottom: 10px;
-  background: #fff;
+  background: white;
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+/* line 124, sass/layouts/_header.scss */
 .home-page .bar:after {
   content: "";
   position: absolute;
   left: 0;
   top: 10px;
-  background: #fff;
+  background: white;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+/* line 133, sass/layouts/_header.scss */
 .home-page .bar.animate:after {
   top: 0;
   transform: rotate(45deg);
   transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+/* line 139, sass/layouts/_header.scss */
 .home-page .bar.animate:before {
   bottom: 0;
   transform: rotate(-45deg);
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+/* line 146, sass/layouts/_header.scss */
+.home-page .hero {
+  width: 100%;
+  height: auto;
+}
+/* line 149, sass/layouts/_header.scss */
+.home-page .hero img {
+  width: 100%;
+}
+/* line 153, sass/layouts/_header.scss */
+.home-page .main {
+  padding: 50px;
+  max-width: 80em;
+  margin: 0 auto;
+}
+/* line 159, sass/layouts/_header.scss */
+.home-page .columnsContainer, .home-page footer {
+  position: relative;
+  margin: 0;
+}
+/* line 164, sass/layouts/_header.scss */
+.home-page .leftColumn, .home-page .rightColumn, .home-page footer {
+  padding: 1.25em;
+}
+/* line 169, sass/layouts/_header.scss */
+.home-page .leftColumn {
+  margin-bottom: .5em;
+}
+@media screen and (min-width: 47.5em) {
+  /* line 176, sass/layouts/_header.scss */
+  .home-page .leftColumn {
+    margin-right: 19.5em;
+  }
+  /* line 180, sass/layouts/_header.scss */
+  .home-page .rightColumn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18.75em;
+  }
+}
+
+/* line 3, sass/layouts/_header2.scss */
 .posts-container .main-header {
   height: 76px;
-  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 100;
+  width: 100%;
 }
+/* line 10, sass/layouts/_header2.scss */
 .posts-container .logo {
   max-width: 225px;
   float: left;
 }
+/* line 13, sass/layouts/_header2.scss */
 .posts-container .logo img {
   max-width: 190px;
   width: 100%;
 }
+/* line 18, sass/layouts/_header2.scss */
 .posts-container .wrap {
   position: relative;
   right: 0;
@@ -772,17 +1200,20 @@ embed, iframe, object {
   overflow-x: hidden;
   transition: all 0.3s ease-out;
 }
+/* line 24, sass/layouts/_header2.scss */
 .posts-container .wrap.active {
   right: 16em;
   overflow-x: visible;
   transition: all 0.3s ease-out;
 }
+/* line 30, sass/layouts/_header2.scss */
 .posts-container a {
   text-decoration: none;
   font-family: arial;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
+/* line 36, sass/layouts/_header2.scss */
 .posts-container .menu-link {
   float: right;
   display: block;
@@ -791,126 +1222,169 @@ embed, iframe, object {
   padding: 12px;
   height: 26px;
 }
+/* line 43, sass/layouts/_header2.scss */
 .posts-container .menu-link:hover {
   cursor: pointer;
 }
+/* line 48, sass/layouts/_header2.scss */
 .posts-container nav[role=navigation] {
-  background: #999;
+  background: #00a9a6;
   clear: both;
   overflow: hidden;
   width: 16em;
+  height: 50em;
   position: absolute;
   top: 0;
   bottom: 0;
   right: -16em;
 }
+@media only screen and (max-width: 47em) {
+  /* line 48, sass/layouts/_header2.scss */
+  .posts-container nav[role=navigation] {
+    height: 75vh;
+  }
+}
+/* line 61, sass/layouts/_header2.scss */
 .posts-container nav[role=navigation] ul {
   margin: 0;
   padding: 0;
 }
+/* line 65, sass/layouts/_header2.scss */
 .posts-container nav[role=navigation] ul li a {
   display: block;
   padding: 0.8em;
   color: #fff;
-  border-top: 1px solid #808080;
+  border-top: 1px solid #00a9a6;
 }
+/* line 73, sass/layouts/_header2.scss */
 .posts-container nav[role=navigation] ul li:hover ul {
   max-height: 25em;
   transition: all 0.8s ease-out;
 }
+/* line 78, sass/layouts/_header2.scss */
 .posts-container nav[role=navigation] ul li ul {
   max-height: 0px;
   overflow: hidden;
   transition: all 0.3s ease-out;
 }
+/* line 83, sass/layouts/_header2.scss */
 .posts-container nav[role=navigation] ul li ul li a {
-  background: #808080;
+  background: #00a9a6;
 }
+/* line 85, sass/layouts/_header2.scss */
 .posts-container nav[role=navigation] ul li ul li a:hover {
-  background: #676767;
+  background: #007674;
 }
+/* line 94, sass/layouts/_header2.scss */
 .posts-container .hero {
   width: 100%;
   height: auto;
 }
+/* line 97, sass/layouts/_header2.scss */
 .posts-container .hero img {
   width: 100%;
 }
+/* line 101, sass/layouts/_header2.scss */
 .posts-container .main {
   padding: 50px;
   max-width: 67.5em;
   margin: 0 auto;
 }
-.posts-container .bar, .posts-container .bar:after, .posts-container .bar:before {
+/* line 111, sass/layouts/_header2.scss */
+.posts-container .bar,
+.posts-container .bar:after,
+.posts-container .bar:before {
   width: 35px;
   height: 4px;
 }
+/* line 118, sass/layouts/_header2.scss */
 .posts-container .bar {
   position: relative;
   transform: translateY(10px);
   transition: all 0ms 300ms;
   background: #fff;
 }
+/* line 123, sass/layouts/_header2.scss */
 .posts-container .bar.animate {
   background: rgba(255, 255, 255, 0);
 }
+/* line 128, sass/layouts/_header2.scss */
 .posts-container .bar:before {
   content: "";
   position: absolute;
   left: 0;
   bottom: 10px;
-  background: #fff;
+  background: white;
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+/* line 137, sass/layouts/_header2.scss */
 .posts-container .bar:after {
   content: "";
   position: absolute;
   left: 0;
   top: 10px;
-  background: #fff;
+  background: white;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+/* line 146, sass/layouts/_header2.scss */
 .posts-container .bar.animate:after {
   top: 0;
   transform: rotate(45deg);
   transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+/* line 152, sass/layouts/_header2.scss */
 .posts-container .bar.animate:before {
   bottom: 0;
   transform: rotate(-45deg);
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?-ee0u0f");
+  src: url("../fonts/icomoon/icomoon.eot?#iefix-ee0u0f") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff?-ee0u0f") format("woff"), url("../fonts/icomoon/icomoon.ttf?-ee0u0f") format("truetype"), url("../fonts/icomoon/icomoon.svg?-ee0u0f#icomoon") format("svg");
+}
+/* line 13, sass/layouts/_posts2.scss */
+.posts-container {
+  /* Header */
+  /* Trigger Button */
+  /* Conent */
+  /***** Individual effects *****/
+  /* -------------------------- */
+  /* Faded gradient */
+  /* -------------------------- */
+  /* Media Queries */
+}
+/* line 15, sass/layouts/_posts2.scss */
 .posts-container a {
   outline: none;
   color: #cf4a5c;
   text-decoration: none;
 }
+/* line 21, sass/layouts/_posts2.scss */
 .posts-container a:hover, .posts-container a:focus {
   color: #69606b;
-  /* demo */
-  /*
-@font-face {
-	font-weight: normal;
-	font-style: normal;
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon/icomoon.eot?-ee0u0f');
-	src:url('../fonts/icomoon/icomoon.eot?#iefix-ee0u0f') format('embedded-opentype'),
-		url('../fonts/icomoon/icomoon.woff?-ee0u0f') format('woff'),
-		url('../fonts/icomoon/icomoon.ttf?-ee0u0f') format('truetype'),
-		url('../fonts/icomoon/icomoon.svg?-ee0u0f#icomoon') format('svg');
 }
-*/
-}
+/* line 26, sass/layouts/_posts2.scss */
 .posts-container html, .posts-container body, .posts-container .container, .posts-container .header {
   height: 100%;
-  /* Header */
+  /*@media only screen and (max-width:47em){
+  	height: 30%;
+  }*/
 }
+/* line 34, sass/layouts/_posts2.scss */
 .posts-container .header {
   position: relative;
   margin: 0 auto;
   min-height: 560px;
   width: 100%;
+  /*@media only screen and (max-width:47em){
+  	height: 100%;
+  }*/
 }
+/* line 44, sass/layouts/_posts2.scss */
 .posts-container .bg-img {
   position: absolute;
   overflow: hidden;
@@ -921,6 +1395,7 @@ embed, iframe, object {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+/* line 55, sass/layouts/_posts2.scss */
 .posts-container .bg-img img {
   position: absolute;
   top: 0;
@@ -931,6 +1406,13 @@ embed, iframe, object {
   width: 100%;
   height: auto;
 }
+@media only screen and (max-width: 47em) {
+  /* line 55, sass/layouts/_posts2.scss */
+  .posts-container .bg-img img {
+    min-width: 200%;
+  }
+}
+/* line 69, sass/layouts/_posts2.scss */
 .posts-container .title {
   z-index: 1000;
   margin: 0 auto;
@@ -942,28 +1424,44 @@ embed, iframe, object {
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  /*@media only screen and (max-width:47em){
+  	top: 25%;
+  }*/
 }
+/* line 85, sass/layouts/_posts2.scss */
 .posts-container .title h1 {
   padding: 0 0 0.2em;
   color: #fff;
   font-weight: 800;
   font-size: 3.25em;
   margin: 0 auto;
+  text-align: center;
 }
+/* line 94, sass/layouts/_posts2.scss */
 .posts-container .title p {
   color: #fff;
   padding: 0 0 0.6em;
   font-weight: 300;
   font-size: 0.85em;
   margin: 0 auto;
+  text-align: center;
 }
-.posts-container .title h1, .posts-container .title p.subline {
+/* line 103, sass/layouts/_posts2.scss */
+.posts-container .title h1,
+.posts-container .title p.subline {
   line-height: 1;
 }
+/* line 108, sass/layouts/_posts2.scss */
 .posts-container .title p.subline {
   font-size: 1.75em;
-  /* Trigger Button */
 }
+/* line 112, sass/layouts/_posts2.scss */
+.posts-container .wrap {
+  /*@media only screen and (max-width:47em){
+  	height: 400px;
+  }*/
+}
+/* line 119, sass/layouts/_posts2.scss */
 .posts-container button.trigger {
   position: fixed;
   bottom: 40px;
@@ -979,17 +1477,21 @@ embed, iframe, object {
   color: transparent;
   font-size: 2em;
   cursor: pointer;
+  box-shadow: none;
 }
+/* line 137, sass/layouts/_posts2.scss */
 .posts-container .container:not(.notrans) button.trigger {
   -webkit-transition: opacity 0.3s 0.5s;
   transition: opacity 0.3s 0.5s;
 }
+/* line 142, sass/layouts/_posts2.scss */
 .posts-container .container.modify:not(.notrans) button.trigger {
   opacity: 0;
   pointer-events: none;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
+/* line 149, sass/layouts/_posts2.scss */
 .posts-container button.trigger::before {
   position: absolute;
   bottom: 100%;
@@ -1002,9 +1504,11 @@ embed, iframe, object {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+/* line 162, sass/layouts/_posts2.scss */
 .posts-container button.trigger:focus {
   outline: none;
 }
+/* line 166, sass/layouts/_posts2.scss */
 .posts-container button.trigger span {
   position: relative;
   display: block;
@@ -1012,6 +1516,7 @@ embed, iframe, object {
   width: 100%;
   height: 100%;
 }
+/* line 174, sass/layouts/_posts2.scss */
 .posts-container button.trigger span::before {
   position: absolute;
   top: 0;
@@ -1029,27 +1534,32 @@ embed, iframe, object {
   speak: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* Conent */
 }
+/* line 194, sass/layouts/_posts2.scss */
 .posts-container .content {
   margin: 0 auto;
   padding: 0 0 3em;
 }
+/* line 199, sass/layouts/_posts2.scss */
 .posts-container .content > div:not(.title) {
   margin: -80px auto 0;
   max-width: 900px;
   padding: 0 1.25em;
 }
+/* line 205, sass/layouts/_posts2.scss */
 .posts-container .content > div:not(.title) p {
   margin: 0 auto 1.5em auto;
 }
+/* line 209, sass/layouts/_posts2.scss */
 .posts-container .content > div:not(.title) p:first-child {
   font-size: 1.35em;
 }
+/* line 213, sass/layouts/_posts2.scss */
 .posts-container .content h3 {
   margin: 0;
   font-size: 1.4em;
 }
+/* line 218, sass/layouts/_posts2.scss */
 .posts-container .content blockquote {
   padding: 0.25em;
   font-style: italic;
@@ -1057,43 +1567,58 @@ embed, iframe, object {
   font-family: 'Lora', serif;
   line-height: 1.4;
 }
+/* line 226, sass/layouts/_posts2.scss */
 .posts-container .content blockquote::before {
   content: '\201C';
 }
+/* line 230, sass/layouts/_posts2.scss */
 .posts-container .content blockquote::after {
   content: '\201D';
-  /***** Individual effects *****/
-  /* -------------------------- */
-  /* Faded gradient */
-  /* -------------------------- */
 }
+/* line 242, sass/layouts/_posts2.scss */
 .posts-container .intro-effect-fadeout:not(.notrans) .bg-img {
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
 }
+/* line 247, sass/layouts/_posts2.scss */
 .posts-container .intro-effect-fadeout:not(.notrans) .bg-img::after {
   -webkit-transition-property: opacity;
   transition-property: opacity;
 }
+/* line 252, sass/layouts/_posts2.scss */
 .posts-container .intro-effect-fadeout:not(.notrans) .header h1 {
   -webkit-transition-property: color;
   transition-property: color;
 }
-.posts-container .intro-effect-fadeout:not(.notrans) .header p, .posts-container .intro-effect-fadeout:not(.notrans) .content > div {
+/* line 257, sass/layouts/_posts2.scss */
+.posts-container .intro-effect-fadeout:not(.notrans) .header p,
+.posts-container .intro-effect-fadeout:not(.notrans) .content > div {
   -webkit-transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
 }
-.posts-container .intro-effect-fadeout:not(.notrans) .bg-img, .posts-container .intro-effect-fadeout:not(.notrans) .bg-img::after, .posts-container .intro-effect-fadeout:not(.notrans) .header h1, .posts-container .intro-effect-fadeout:not(.notrans) .header p, .posts-container .intro-effect-fadeout:not(.notrans) .content > div {
+/* line 263, sass/layouts/_posts2.scss */
+.posts-container .intro-effect-fadeout:not(.notrans) .bg-img,
+.posts-container .intro-effect-fadeout:not(.notrans) .bg-img::after,
+.posts-container .intro-effect-fadeout:not(.notrans) .header h1,
+.posts-container .intro-effect-fadeout:not(.notrans) .header p,
+.posts-container .intro-effect-fadeout:not(.notrans) .content > div {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
+/* line 272, sass/layouts/_posts2.scss */
 .posts-container .intro-effect-fadeout .header {
   overflow: hidden;
 }
+/* line 276, sass/layouts/_posts2.scss */
 .posts-container .intro-effect-fadeout.modify .bg-img {
   -webkit-transform: translateY(-25%);
   transform: translateY(-25%);
+  /*@media only screen and (max-width:47em){
+  	-webkit-transform: translateY(-0%);
+  	transform: translateY(-0%);
+  }*/
 }
+/* line 286, sass/layouts/_posts2.scss */
 .posts-container .intro-effect-fadeout .bg-img::after {
   content: '';
   position: absolute;
@@ -1103,67 +1628,83 @@ embed, iframe, object {
   left: 0;
   opacity: 0;
   pointer-events: none;
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 100%);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
 }
+/* line 299, sass/layouts/_posts2.scss */
 .posts-container .intro-effect-fadeout.modify .bg-img::after {
   opacity: 1;
 }
+/* line 303, sass/layouts/_posts2.scss */
 .posts-container .intro-effect-fadeout .title {
   text-align: left;
   max-width: 900px;
 }
-.posts-container .intro-effect-fadeout.modify .header h1, .posts-container .intro-effect-fadeout .header p {
+/* line 308, sass/layouts/_posts2.scss */
+.posts-container .intro-effect-fadeout.modify .header h1,
+.posts-container .intro-effect-fadeout .header p {
   color: #514753;
 }
+/* line 313, sass/layouts/_posts2.scss */
 .posts-container .intro-effect-fadeout .header p {
   opacity: 0;
 }
+/* line 317, sass/layouts/_posts2.scss */
 .posts-container .intro-effect-fadeout .header p:nth-child(2) {
   -webkit-transform: translateX(150px);
   transform: translateX(150px);
 }
+/* line 322, sass/layouts/_posts2.scss */
 .posts-container .intro-effect-fadeout .header p:nth-child(3) {
   -webkit-transform: translateX(-150px);
   transform: translateX(-150px);
 }
-.posts-container .intro-effect-fadeout.modify .header p:nth-child(2), .posts-container .intro-effect-fadeout.modify .header p:nth-child(3) {
+/* line 327, sass/layouts/_posts2.scss */
+.posts-container .intro-effect-fadeout.modify .header p:nth-child(2),
+.posts-container .intro-effect-fadeout.modify .header p:nth-child(3) {
   opacity: 1;
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
+/* line 334, sass/layouts/_posts2.scss */
 .posts-container .intro-effect-fadeout .content {
   z-index: 1000;
   position: relative;
 }
+/* line 339, sass/layouts/_posts2.scss */
 .posts-container .intro-effect-fadeout .content > div {
   opacity: 0;
   -webkit-transform: translateY(350px);
   transform: translateY(350px);
 }
+/* line 345, sass/layouts/_posts2.scss */
 .posts-container .intro-effect-fadeout.modify .content > div {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  /* Media Queries */
 }
 @media screen and (max-width: 47em) {
+  /* line 355, sass/layouts/_posts2.scss */
   .posts-container .title, .posts-container .content {
     font-size: 70%;
   }
+  /* line 359, sass/layouts/_posts2.scss */
   .posts-container .codrops-demos a {
     font-size: 80%;
   }
+  /* line 363, sass/layouts/_posts2.scss */
   .posts-container .intro-effect-side .title {
     width: 100%;
     padding: 0 1em;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+  /* line 370, sass/layouts/_posts2.scss */
   .posts-container .intro-effect-side.modify .bg-img::before {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
+  /* line 375, sass/layouts/_posts2.scss */
   .posts-container .intro-effect-side .bg-img::after {
     border-left-width: 0px;
     border-right-width: 0px;
@@ -1171,36 +1712,67 @@ embed, iframe, object {
     left: 0px;
     background: rgba(255, 255, 255, 0.1);
   }
+  /* line 383, sass/layouts/_posts2.scss */
   .posts-container .intro-effect-side.modify .bg-img::after {
     background: rgba(255, 255, 255, 0.8);
   }
+  /* line 387, sass/layouts/_posts2.scss */
   .posts-container .intro-effect-sidefixed .content {
     width: 100%;
     margin-left: auto;
   }
+  /* line 392, sass/layouts/_posts2.scss */
   .posts-container .intro-effect-sidefixed .bg-img::after {
     width: 95%;
   }
 }
 @media screen and (max-width: 27em) {
+  /* line 399, sass/layouts/_posts2.scss */
   .posts-container .intro-effect-jam3 .content {
     padding: 0 2em 5em;
   }
+  /* line 403, sass/layouts/_posts2.scss */
   .posts-container .intro-effect-grid .grid li h2 {
     display: none;
   }
+  /* line 407, sass/layouts/_posts2.scss */
   .posts-container .intro-effect-push .header .title {
     top: 60px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
+  /* line 413, sass/layouts/_posts2.scss */
   .posts-container .title, .posts-container .content {
     font-size: 50%;
   }
+  /* line 417, sass/layouts/_posts2.scss */
   .posts-container button.trigger::before {
     display: none;
   }
 }
+/* line 422, sass/layouts/_posts2.scss */
+.posts-container .codrops-icon:before {
+  text-transform: none;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-family: 'codropsicons';
+  text-align: center;
+  speak: none;
+  margin: 0 0.55em 0 0;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 434, sass/layouts/_posts2.scss */
+.posts-container .codrops-icon-drop:before {
+  content: "\e001";
+}
+/* line 438, sass/layouts/_posts2.scss */
+.posts-container .codrops-icon-prev:before {
+  content: "\e004";
+}
+
+/* Header */
+/* line 2, sass/layouts/_services.scss */
 .services-header {
   width: 100%;
   position: absolute;
@@ -1209,25 +1781,31 @@ embed, iframe, object {
   z-index: 1000;
   text-align: center;
 }
-@media only screen and (max-width:47em) {
+@media only screen and (max-width: 47em) {
+  /* line 2, sass/layouts/_services.scss */
   .services-header {
     display: none;
   }
 }
+/* line 12, sass/layouts/_services.scss */
 .services-header h1, .services-header p {
   color: #fff;
 }
+/* line 15, sass/layouts/_services.scss */
 .services-header p {
   width: 50%;
   text-align: center;
   display: block;
   margin: 0 auto;
 }
+/* line 21, sass/layouts/_services.scss */
 .services-header-container {
   width: 60%;
   margin: 0 auto;
   text-align: center;
 }
+
+/* line 28, sass/layouts/_services.scss */
 .services-section {
   background: url(/Img/graydient-web-bkg.svg);
   background-size: auto 100%;
@@ -1235,51 +1813,73 @@ embed, iframe, object {
   display: table;
   table-layout: fixed;
 }
+/* line 33, sass/layouts/_services.scss */
 .services-section .service {
   content: "";
   display: table;
   table-layout: fixed;
 }
+/* line 35, sass/layouts/_services.scss */
 .services-section .service .icon-left {
   text-align: center;
   padding: 25px 10px;
 }
+/* line 38, sass/layouts/_services.scss */
 .services-section .service .icon-left img {
   max-width: 30%;
   min-width: 60px;
 }
+/* line 44, sass/layouts/_services.scss */
 .services-section .service .info-right {
   background: #fff;
   padding: 15px 25px;
 }
+/* line 47, sass/layouts/_services.scss */
 .services-section .service .info-right .service-info {
   max-width: 700px;
 }
+
+/* line 1, sass/layouts/_defaults.scss */
 .white {
   color: #fff;
 }
+
+/* line 5, sass/layouts/_defaults.scss */
 .center {
   text-align: center;
 }
+
+/* line 16, sass/layouts/_defaults.scss */
 .color-1 {
   color: #00a9a6;
 }
+
+/* line 19, sass/layouts/_defaults.scss */
 .color-2 {
   color: #b7d26b;
 }
+
+/* line 22, sass/layouts/_defaults.scss */
 .color-3 {
   color: #e8842c;
 }
+
+/* line 25, sass/layouts/_defaults.scss */
 .color-4 {
   color: #666;
 }
+
+/* line 28, sass/layouts/_defaults.scss */
 a {
   color: #00a9a6;
 }
+
+/* line 31, sass/layouts/_defaults.scss */
 .full {
   width: 100%;
   min-height: 100px;
 }
+/* line 34, sass/layouts/_defaults.scss */
 .full .container {
   max-width: 1020px;
   margin: 0 auto;
